@@ -1,0 +1,27 @@
+[push]
+       default = current
+[core]
+	excludesfile = /Users/wafa/.gitignore_global
+	autocrlf = input
+	safecrlf = warn
+	eol = lf
+[credential]
+       helper = store
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[fetch]
+	prune = true
+[color]
+	ui = auto
+	status = auto
+	branch = auto
+[help]
+	autocorrect = -1
+[alias]
+	st = status
+[user]
+	name = Wafa Nasser
